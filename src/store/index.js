@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import { db } from '../firebase/firebase'
+import { db, auth } from '../firebase/firebase'
 import router from '../router'
 
 Vue.use(Vuex)
@@ -74,6 +74,4 @@ export default new Vuex.Store({
       })
     }
   },
-  modules: {
-  }
 })

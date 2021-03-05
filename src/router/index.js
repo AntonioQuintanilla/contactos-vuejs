@@ -10,11 +10,6 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/Inicio.vue')
   },
   {
-    path: '/registro',
-    name: 'Registro',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Registro.vue')
-  },
-  {
     path: '/editar/:id',
     name: 'Editar',
     component: () => import(/* webpackChunkName: "about" */ '../views/Editar.vue')
@@ -23,7 +18,7 @@ const routes = [
     path: '/agregar',
     name: 'Agregar',
     component: () => import(/* webpackChunkName: "about" */ '../views/Agregar.vue')
-  }
+  },
 ]
 
 const router = new VueRouter({

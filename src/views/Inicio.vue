@@ -2,7 +2,7 @@
   <div>
     <div>
       <div class="d-flex justify-content-end mr-5 align-items-center">
-        <p class="d-inline-block mr-3 font-weight-bold">Agregar Contacto</p>
+        <p class="d-inline-block mr-3 font-weight-bold">Añadir Contacto</p>
         <router-link to="/agregar">
           <b-button variant="primary" class="float-end"
             ><b-icon icon="plus-circle"></b-icon
@@ -11,7 +11,7 @@
       </div>
       <b-card-group class="mx-3 mt-3" deck>
         <b-card
-          v-for="item in contactos.slice(0, 3)"
+          v-for="item in contactos"
           :key="item.id"
           border-variant="primary"
           :header="item.nombre"
@@ -29,6 +29,7 @@
     </div>
   </div>
 </template>
+
 
 <script>
 import { mapActions, mapState } from "vuex";
